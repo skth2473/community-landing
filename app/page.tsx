@@ -52,8 +52,8 @@ export default function LandingPage() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg" className="bg-primary text-primary-foreground">
-                    Join Our Community
+                  <Button size="lg" className="bg-primary text-primary-foreground" asChild>
+                    <Link href="https://cuintranet.in/">Join Our Community</Link>
                   </Button>
                   <Button size="lg" variant="outline">
                     Learn More
@@ -61,10 +61,21 @@ export default function LandingPage() {
                   </Button>
                 </div>
               </div>
-              <div className="mx-auto aspect-video overflow-hidden rounded-xl object-cover lg:order-last">
+              {/* 
+              <div className="mx-auto w-[400px] h-[550px] overflow-hidden rounded-xl lg:order-last">
+  <Image
+    src="/logo.png"
+    width={400}
+    height={550}
+    alt="Engineering students collaborating on a project"
+    className="w-full h-full object-contain"
+  />
+</div>
+ */}
+              <div className="mx-auto w-[400px] h-[550px] overflow-hidden rounded-xl lg:order-last">
                 <Image
-                  src="/placeholder.svg?height=550&width=800"
-                  width={800}
+                  src="/logo.png"
+                  width={400}
                   height={550}
                   alt="Engineering students collaborating on a project"
                   className="mx-auto h-auto w-full rounded-xl object-cover"
@@ -123,7 +134,7 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section id="events" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        {/* <section id="events" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -190,7 +201,7 @@ export default function LandingPage() {
               </Button>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section id="team" className="w-full py-12 md:py-24 lg:py-32 bg-background">
           <div className="container px-4 md:px-6">
@@ -200,13 +211,18 @@ export default function LandingPage() {
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Meet the passionate individuals leading our engineering community.
                 </p>
+                <p className="max-w-[900px] text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed mt-2">
+                  Our leadership team brings diverse expertise and fresh perspectives to drive innovation and growth
+                  within our community. Each member is committed to creating valuable experiences and opportunities for
+                  all our members.
+                </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2 lg:grid-cols-4">
-              <Card className="overflow-hidden">
+            <Card className="overflow-hidden">
                 <div className="aspect-square w-full overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=300&width=300"
+                    src="\PuneetSir.jpeg"
                     width={300}
                     height={300}
                     alt="Team member"
@@ -214,8 +230,95 @@ export default function LandingPage() {
                   />
                 </div>
                 <CardContent className="p-4">
-                  <h3 className="font-bold">Alex Johnson</h3>
-                  <p className="text-sm text-muted-foreground">President</p>
+                  <h3 className="font-bold">Dr. Puneet Kumar </h3>
+                  <p className="text-sm text-muted-foreground">Faculty Advisor</p>
+                  <div className="mt-2 flex space-x-2">
+                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                      <Github className="h-4 w-4" />
+                      <span className="sr-only">GitHub</span>
+                    </Link>
+                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                      <Linkedin className="h-4 w-4" />
+                      <span className="sr-only">LinkedIn</span>
+                    </Link>
+                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                      <Twitter className="h-4 w-4" />
+                      <span className="sr-only">Twitter</span>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="overflow-hidden">
+                <div className="aspect-square w-full overflow-hidden">
+                  <Image
+                    src="Himanshi.jpeg"
+                    width={300}
+                    height={300}
+                    alt="Team member"
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-bold">Er. Himanshi</h3>
+                  <p className="text-sm text-muted-foreground">Faculty Co-Advisor</p>
+                  <div className="mt-2 flex space-x-2">
+                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                      <Github className="h-4 w-4" />
+                      <span className="sr-only">GitHub</span>
+                    </Link>
+                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                      <Linkedin className="h-4 w-4" />
+                      <span className="sr-only">LinkedIn</span>
+                    </Link>
+                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                      <Twitter className="h-4 w-4" />
+                      <span className="sr-only">Twitter</span>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="overflow-hidden">
+                <div className="aspect-square w-full overflow-hidden">
+                  <Image
+                    src="\IMG20240427164023.jpg"
+                    width={300}
+                    height={300}
+                    alt="Team member"
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-bold">Sarthak Kumar Thakur</h3>
+                  <p className="text-sm text-muted-foreground">Secretary</p>
+                  <div className="mt-2 flex space-x-2">
+                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                      <Github className="h-4 w-4" />
+                      <span className="sr-only">GitHub</span>
+                    </Link>
+                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                      <Linkedin className="h-4 w-4" />
+                      <span className="sr-only">LinkedIn</span>
+                    </Link>
+                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                      <Twitter className="h-4 w-4" />
+                      <span className="sr-only">Twitter</span>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="overflow-hidden">
+                <div className="aspect-square w-full overflow-hidden">
+                  <Image
+                    src="Anirudh.jpeg"
+                    width={300}
+                    height={300}
+                    alt="Team member"
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-bold">Anirudh Vikal</h3>
+                  <p className="text-sm text-muted-foreground"> Joint Secretary</p>
                   <div className="mt-2 flex space-x-2">
                     <Link href="#" className="text-muted-foreground hover:text-primary">
                       <Github className="h-4 w-4" />
@@ -243,8 +346,8 @@ export default function LandingPage() {
                   />
                 </div>
                 <CardContent className="p-4">
-                  <h3 className="font-bold">Maya Patel</h3>
-                  <p className="text-sm text-muted-foreground">Vice President</p>
+                  <h3 className="font-bold"> Lavanya Sood</h3>
+                  <p className="text-sm text-muted-foreground">Joint Secretary</p>
                   <div className="mt-2 flex space-x-2">
                     <Link href="#" className="text-muted-foreground hover:text-primary">
                       <Github className="h-4 w-4" />
@@ -272,8 +375,8 @@ export default function LandingPage() {
                   />
                 </div>
                 <CardContent className="p-4">
-                  <h3 className="font-bold">David Kim</h3>
-                  <p className="text-sm text-muted-foreground">Technical Lead</p>
+                  <h3 className="font-bold">Mehak Kaur</h3>
+                  <p className="text-sm text-muted-foreground">Joint Secretary</p>
                   <div className="mt-2 flex space-x-2">
                     <Link href="#" className="text-muted-foreground hover:text-primary">
                       <Github className="h-4 w-4" />
@@ -301,8 +404,39 @@ export default function LandingPage() {
                   />
                 </div>
                 <CardContent className="p-4">
-                  <h3 className="font-bold">Sarah Chen</h3>
+                  <h3 className="font-bold"> Karan Joshi </h3>
                   <p className="text-sm text-muted-foreground">Events Coordinator</p>
+                  <div className="mt-2 flex space-x-2">
+                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                      <Github className="h-4 w-4" />
+                      <span className="sr-only">GitHub</span>
+                    </Link>
+                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                      <Linkedin className="h-4 w-4" />
+                      <span className="sr-only">LinkedIn</span>
+                    </Link>
+                    <Link href="#" className="text-muted-foreground hover:text-primary">
+                      <Twitter className="h-4 w-4" />
+                      <span className="sr-only">Twitter</span>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              
+              <Card className="overflow-hidden">
+                <div className="aspect-square w-full overflow-hidden">
+                  <Image
+                    src="/placeholder.svg?height=300&width=300"
+                    width={300}
+                    height={300}
+                    alt="Team member"
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-bold">Karan</h3>
+                  <p className="text-sm text-muted-foreground">Designing Lead</p>
                   <div className="mt-2 flex space-x-2">
                     <Link href="#" className="text-muted-foreground hover:text-primary">
                       <Github className="h-4 w-4" />
@@ -516,7 +650,7 @@ export default function LandingPage() {
             <div className="flex flex-col gap-4">
               <div className="flex gap-2 items-center">
                 <Code className="h-6 w-6 text-primary" />
-                <span className="text-lg font-bold">TechBuilders</span>
+                <span className="text-lg font-bold">Engineering Community</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Empowering the next generation of engineers to build, lead, and innovate.
@@ -558,7 +692,7 @@ export default function LandingPage() {
                 <h3 className="text-lg font-medium">Contact</h3>
                 <nav className="mt-4 flex flex-col gap-2">
                   <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
-                    contact@techbuilders.org
+                    contact@engineeringcommunity.org
                   </Link>
                   <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
                     Engineering Building, Room 204
@@ -571,9 +705,28 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="mt-8 border-t pt-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <p className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} TechBuilders Engineering Community. All rights reserved.
-            </p>
+            <div className="flex flex-col gap-2">
+              <p className="text-xs text-muted-foreground">
+                © {new Date().getFullYear()} Engineering Community. All rights reserved.
+              </p>
+              <p className="text-xs text-muted-foreground">
+                Developed by{" "}
+                <Link href="#" className="font-medium hover:text-primary">
+                  Sarthak Kumar Thakur
+                </Link>
+                <span className="ml-2 inline-flex gap-2">
+                  <Link href="#" className="text-muted-foreground hover:text-primary">
+                    <Github className="h-4 w-4" />
+                  </Link>
+                  <Link href="#" className="text-muted-foreground hover:text-primary">
+                    <Linkedin className="h-4 w-4" />
+                  </Link>
+                  <Link href="#" className="text-muted-foreground hover:text-primary">
+                    <Twitter className="h-4 w-4" />
+                  </Link>
+                </span>
+              </p>
+            </div>
             <nav className="flex gap-4">
               <Link href="#" className="text-xs text-muted-foreground hover:text-primary">
                 Privacy Policy
