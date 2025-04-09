@@ -3,6 +3,9 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { ArrowDown } from "lucide-react";
+import { Instagram } from "lucide-react";
+
 import { Calendar, Users, Code, Lightbulb, ChevronRight, Github, Linkedin, Twitter, ArrowRight } from "lucide-react"
 
 export default function LandingPage() {
@@ -134,74 +137,6 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* <section id="events" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Upcoming Events</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Join us for these exciting opportunities to learn, network, and grow your skills.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2 lg:gap-12">
-              <Card className="overflow-hidden">
-                <div className="aspect-video w-full overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=300&width=500"
-                    width={500}
-                    height={300}
-                    alt="Hackathon event"
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <Badge className="mb-2">May 15-17, 2025</Badge>
-                  <h3 className="text-2xl font-bold">Spring Hackathon</h3>
-                  <p className="mt-2 text-muted-foreground">
-                    48-hour coding challenge to build innovative solutions for real-world problems. Open to all skill
-                    levels.
-                  </p>
-                  <div className="mt-4 flex items-center gap-2">
-                    <Calendar className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-sm text-muted-foreground">Campus Innovation Center</span>
-                  </div>
-                  <Button className="mt-4 w-full">Register Now</Button>
-                </CardContent>
-              </Card>
-              <Card className="overflow-hidden">
-                <div className="aspect-video w-full overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=300&width=500"
-                    width={500}
-                    height={300}
-                    alt="Workshop event"
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <Badge className="mb-2">June 5, 2025</Badge>
-                  <h3 className="text-2xl font-bold">AI Workshop Series</h3>
-                  <p className="mt-2 text-muted-foreground">
-                    Hands-on workshop on implementing machine learning models for practical applications, led by
-                    industry experts.
-                  </p>
-                  <div className="mt-4 flex items-center gap-2">
-                    <Calendar className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-sm text-muted-foreground">Engineering Building, Room 305</span>
-                  </div>
-                  <Button className="mt-4 w-full">Register Now</Button>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="flex justify-center">
-              <Button variant="outline" className="mt-4">
-                View All Events
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
-          </div>
-        </section> */}
 
         <section id="team" className="w-full py-12 md:py-24 lg:py-32 bg-background">
           <div className="container px-4 md:px-6">
@@ -219,7 +154,7 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2 lg:grid-cols-4">
-            <Card className="overflow-hidden">
+              <Card className="overflow-hidden">
                 <div className="aspect-square w-full overflow-hidden">
                   <Image
                     src="\PuneetSir.jpeg"
@@ -422,8 +357,8 @@ export default function LandingPage() {
                   </div>
                 </CardContent>
               </Card>
-              
-              
+
+
               <Card className="overflow-hidden">
                 <div className="aspect-square w-full overflow-hidden">
                   <Image
@@ -485,10 +420,10 @@ export default function LandingPage() {
                   />
                 </div>
                 <CardContent className="p-4">
-                  <Badge className="mb-2">Fall 2024</Badge>
-                  <h3 className="font-bold">National Robotics Competition</h3>
+                  <Badge className="mb-2">Envision 1.0 - 2024</Badge>
+                  <h3 className="font-bold">Inaurgation of our Community</h3>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Our team won first place in the autonomous navigation challenge.
+                    Launched our community with a grand event.
                   </p>
                 </CardContent>
               </Card>
@@ -503,10 +438,10 @@ export default function LandingPage() {
                   />
                 </div>
                 <CardContent className="p-4">
-                  <Badge className="mb-2">Spring 2024</Badge>
-                  <h3 className="font-bold">Industry Networking Night</h3>
+                  <Badge className="mb-2">Tekathon Bootcamp</Badge>
+                  <h3 className="font-bold">Aarambh </h3>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Connected 200+ students with representatives from top tech companies.
+                    Nurtured Students for the Smart India Hackathon.
                   </p>
                 </CardContent>
               </Card>
@@ -521,10 +456,10 @@ export default function LandingPage() {
                   />
                 </div>
                 <CardContent className="p-4">
-                  <Badge className="mb-2">Winter 2023</Badge>
-                  <h3 className="font-bold">Sustainable Tech Hackathon</h3>
+                  <Badge className="mb-2">Engineer's Day</Badge>
+                  <h3 className="font-bold">National Engineer's Day</h3>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Developed innovative solutions for environmental challenges.
+                    Celebrated National Engineers Day.
                   </p>
                 </CardContent>
               </Card>
@@ -539,10 +474,10 @@ export default function LandingPage() {
                   />
                 </div>
                 <CardContent className="p-4">
-                  <Badge className="mb-2">Fall 2023</Badge>
-                  <h3 className="font-bold">Tech Talk Series</h3>
+                  <Badge className="mb-2">Spheron Bootcamp</Badge>
+                  <h3 className="font-bold">Aptos Workshop</h3>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Hosted speakers from Google, Microsoft, and Tesla.
+                    Hosted Event on how to Build at Aptos Blockchain.
                   </p>
                 </CardContent>
               </Card>
@@ -557,10 +492,10 @@ export default function LandingPage() {
                   />
                 </div>
                 <CardContent className="p-4">
-                  <Badge className="mb-2">Summer 2023</Badge>
+                  <Badge className="mb-2">Meet and greet</Badge>
                   <h3 className="font-bold">Community Outreach Program</h3>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Taught coding basics to 100+ high school students.
+                    facilitated volunteers with certificates.
                   </p>
                 </CardContent>
               </Card>
@@ -575,8 +510,8 @@ export default function LandingPage() {
                   />
                 </div>
                 <CardContent className="p-4">
-                  <Badge className="mb-2">Spring 2023</Badge>
-                  <h3 className="font-bold">Innovation Showcase</h3>
+                  <Badge className="mb-2">AIML Workshop</Badge>
+                  <h3 className="font-bold"></h3>
                   <p className="text-sm text-muted-foreground mt-1">
                     Exhibited student projects to industry professionals.
                   </p>
@@ -631,18 +566,172 @@ export default function LandingPage() {
                   </Button>
                 </div>
               </div>
-              <div className="mx-auto aspect-video overflow-hidden rounded-xl lg:order-last">
+              <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="\Join-Now.png"
                   width={600}
                   height={400}
-                  alt="Engineering students working together"
+                  alt="join Now"
                   className="mx-auto h-auto w-full rounded-xl object-cover"
                 />
               </div>
             </div>
           </div>
         </section>
+        <section>
+          <div className="w-full max-w-4xl mx-auto py-12 px-4">
+            <h2 className="text-3xl font-bold text-center text-blue-500 mb-12">Leadership Timeline</h2>
+
+            {/* Faculty Section */}
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              {/* Faculty Advisor */}
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 shadow-sm">
+                <h3 className="text-xl font-semibold text-blue-800 mb-4">Faculty Advisor</h3>
+                <div className="space-y-4 text-gray-700">
+                  <div className="flex items-start">
+                    <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <div>
+                      <p className="font-medium">Dr. Garima Thakur</p>
+                      <p className="text-sm">June 2024 – January 2025</p>
+                    </div>
+                  </div>
+                  <div className="border-l-2 border-blue-300 h-6 ml-1.5"></div>
+                  <div className="flex items-start">
+                    <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <div>
+                      <p className="font-medium">Dr. Puneet Kumar</p>
+                      <p className="text-sm">January 2025 – Present</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Faculty Co-Advisor */}
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 shadow-sm">
+                <h3 className="text-xl font-semibold text-blue-800 mb-4">Faculty Co-Advisor</h3>
+                <div className="space-y-4 text-gray-700">
+
+                  <div className="flex items-start">
+                    <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <div>
+                      <p className="font-medium">Er. Himanshi</p>
+                      <p className="text-sm">June 2024 – Present</p>
+                    </div>
+                  </div>
+                  {/* Disha Sharma */}
+                  <div className="flex items-start">
+                    <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <div>
+                      <p className="font-medium">Er. Disha Sharma</p>
+                      <p className="text-sm">April 2024 – Present</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Arrow */}
+            <div className="flex justify-center my-6">
+              <ArrowDown className="text-blue-500 h-10 w-10" />
+            </div>
+
+            {/* Secretary Section */}
+            <div className="bg-[#121218] border border-[#2c2c3a] rounded-lg p-6 shadow-sm mb-8 max-w-md mx-auto text-gray-100">
+              <h3 className="text-xl font-semibold text-purple-300 mb-4">Secretary</h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#1e1e2f] border border-[#3e3e55] rounded-lg p-4 shadow-sm w-full max-w-xs text-gray-100">
+                    <p className="font-medium text-purple-300">Sarthak Kumar Thakur</p>
+                    <p className="text-sm text-gray-400">August 2024 – Present</p>
+                    <div className="flex gap-2 mt-1">
+                      <a href="https://github.com/sarthak" target="_blank"><Github className="h-4 w-4 text-gray-500 hover:text-purple-400 transition" /></a>
+                      <a href="https://linkedin.com/in/sarthak" target="_blank"><Linkedin className="h-4 w-4 text-gray-500 hover:text-purple-400 transition" /></a>
+                      <a href="https://instagram.com/sarthak" target="_blank"><Instagram className="h-4 w-4 text-gray-500 hover:text-purple-400 transition" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Arrow */}
+            <div className="flex justify-center my-6">
+              <ArrowDown className="text-indigo-500 h-10 w-10" />
+            </div>
+
+            {/* Joint Secretaries Header */}
+            <h3 className="text-xl font-semibold text-center text-purple-300 mb-6">Joint Secretaries</h3>
+
+            {/* Timeline */}
+            <div className="relative text-gray-800">
+              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-purple-300"></div>
+
+              <div className="space-y-8 relative">
+                {/* Anirudh - Jan 2025 */}
+                <div className="flex items-center justify-center mb-4">
+                  <div className="bg-purple-800 text-white text-sm font-medium px-3 py-1 rounded-full z-10">January 2025</div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="md:col-start-1">
+                    <div className="bg-[#1e1e2f] border border-[#3e3e55] rounded-lg p-4 shadow-sm w-full max-w-xs mr-auto text-gray-100">
+                      <p className="font-medium text-purple-300">Anirudh Vikalp</p>
+                      <p className="text-sm text-gray-400">January 2025 – Present</p>
+                      <div className="flex gap-2 mt-1">
+                        <a href="https://github.com/anirudh" target="_blank"><Github className="h-4 w-4 text-gray-500" /></a>
+                        <a href="https://linkedin.com/in/anirudh" target="_blank"><Linkedin className="h-4 w-4 text-gray-500" /></a>
+                        <a href="https://instagram.com/anirudh" target="_blank"><Instagram className="h-4 w-4 text-gray-500" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mehak - Feb 2025 */}
+                <div className="flex items-center justify-center mb-4">
+                  <div className="bg-purple-800 text-white text-sm font-medium px-3 py-1 rounded-full z-10">February 2025</div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="md:col-start-2">
+                    <div className="bg-[#1e1e2f] border border-[#3e3e55] rounded-lg p-4 shadow-sm w-full max-w-xs mr-auto text-gray-100">
+                      <p className="font-medium text-purple-300">Mehak</p>
+                      <p className="text-sm text-gray-400">February 2025 – Present</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Lavanya - Dec 2024 */}
+                <div className="flex items-center justify-center mb-4">
+                  <div className="bg-purple-800 text-white text-sm font-medium px-3 py-1 rounded-full z-10">December 2024</div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="md:col-start-1">
+                    <div className="bg-[#1e1e2f] border border-[#3e3e55] rounded-lg p-4 shadow-sm w-full max-w-xs ml-auto text-gray-100">
+                      <p className="font-medium text-purple-300">Lavanya Sood</p>
+                      <p className="text-sm text-gray-400">December 2024 – Present</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Barenya - June 2024 to Jan 2025 */}
+                <div className="flex items-center justify-center mb-4">
+                  <div className="bg-purple-800 text-white text-sm font-medium px-3 py-1 rounded-full z-10">June 2024</div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="md:col-start-2">
+                    <div className="bg-[#1e1e2f] border border-[#3e3e55] rounded-lg p-4 shadow-sm w-full max-w-xs mr-auto text-gray-100">
+                      <p className="font-medium text-purple-300">Barenya Behra</p>
+                      <p className="text-sm text-gray-400">June 2024 – January 2025</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
       </main>
       <footer className="w-full border-t bg-background py-6 md:py-12">
         <div className="container px-4 md:px-6">
@@ -691,17 +780,31 @@ export default function LandingPage() {
               <div>
                 <h3 className="text-lg font-medium">Contact</h3>
                 <nav className="mt-4 flex flex-col gap-2">
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
-                    contact@engineeringcommunity.org
+                  <Link
+                    href="mailto:secretary.cuenggcommunity@gmail.com"
+                    className="text-sm text-muted-foreground hover:text-primary"
+                  >
+                    Gmail
                   </Link>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
-                    Engineering Building, Room 204
+                  <Link
+                    href="https://maps.google.com/?q=Block B1, Chandigarh University"
+                    className="text-sm text-muted-foreground hover:text-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Block B1
                   </Link>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
-                    University Campus
+                  <Link
+                    href="https://maps.google.com/?q=Chandigarh University"
+                    className="text-sm text-muted-foreground hover:text-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Chandigarh University
                   </Link>
                 </nav>
               </div>
+
             </div>
           </div>
           <div className="mt-8 border-t pt-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -711,22 +814,23 @@ export default function LandingPage() {
               </p>
               <p className="text-xs text-muted-foreground">
                 Developed by{" "}
-                <Link href="#" className="font-medium hover:text-primary">
+                <Link href="https://www.linkedin.com/in/sarthak-kumar-thakur" className="font-medium hover:text-primary" target="_blank" rel="noopener noreferrer">
                   Sarthak Kumar Thakur
                 </Link>
                 <span className="ml-2 inline-flex gap-2">
-                  <Link href="#" className="text-muted-foreground hover:text-primary">
+                  <Link href="https://github.com/skth2473" className="text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4" />
                   </Link>
-                  <Link href="#" className="text-muted-foreground hover:text-primary">
+                  <Link href="https://www.linkedin.com/in/sarthak-kumar-thakur-097498231/" className="text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-4 w-4" />
                   </Link>
-                  <Link href="#" className="text-muted-foreground hover:text-primary">
+                  <Link href="https://x.com/Sarthak09847929" className="text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
                     <Twitter className="h-4 w-4" />
                   </Link>
                 </span>
               </p>
             </div>
+
             <nav className="flex gap-4">
               <Link href="#" className="text-xs text-muted-foreground hover:text-primary">
                 Privacy Policy
