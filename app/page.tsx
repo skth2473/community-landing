@@ -585,45 +585,40 @@ export default function LandingPage() {
             {/* Faculty Section */}
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               {/* Faculty Advisor */}
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-blue-800 mb-4">Faculty Advisor</h3>
-                <div className="space-y-4 text-gray-700">
+              {/* Faculty Advisor Section */}
+              <div className="bg-[#121218] border border-[#2c2c3a] rounded-lg p-6 shadow-sm mb-8 max-w-md mx-auto text-gray-100">
+                <h3 className="text-xl font-semibold text-blue-300 mb-4">Faculty Advisor</h3>
+                <div className="space-y-4 text-gray-100">
                   <div className="flex items-start">
-                    <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <div className="w-3 h-3 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <div>
-                      <p className="font-medium">Dr. Garima Thakur</p>
-                      <p className="text-sm">June 2024 – January 2025</p>
+                      <p className="font-medium text-blue-300">Dr. Garima Thakur</p>
+                      <p className="text-sm text-gray-400">June 2024 – January 2025</p>
                     </div>
                   </div>
+
                   <div className="border-l-2 border-blue-300 h-6 ml-1.5"></div>
+
                   <div className="flex items-start">
-                    <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <div className="w-3 h-3 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <div>
-                      <p className="font-medium">Dr. Puneet Kumar</p>
-                      <p className="text-sm">January 2025 – Present</p>
+                      <p className="font-medium text-blue-300">Dr. Puneet Kumar</p>
+                      <p className="text-sm text-gray-400">January 2025 – Present</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Faculty Co-Advisor */}
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-blue-800 mb-4">Faculty Co-Advisor</h3>
-                <div className="space-y-4 text-gray-700">
 
-                  <div className="flex items-start">
-                    <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <div>
-                      <p className="font-medium">Er. Himanshi</p>
-                      <p className="text-sm">June 2024 – Present</p>
-                    </div>
-                  </div>
-                  {/* Disha Sharma */}
-                  <div className="flex items-start">
-                    <div className="w-3 h-3 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <div>
-                      <p className="font-medium">Er. Disha Sharma</p>
-                      <p className="text-sm">April 2024 – Present</p>
+              {/* Faculty Co-Advisor */}
+              {/* Faculty Co-Advisor Section */}
+              <div className="bg-[#121218] border border-[#2c2c3a] rounded-lg p-6 shadow-sm mb-8 max-w-md mx-auto text-gray-100">
+                <h3 className="text-xl font-semibold text-blue-300 mb-4">Faculty Co-Advisor</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-[#1e1e2f] border border-[#3e3e55] rounded-lg p-4 shadow-sm w-full max-w-xs text-gray-100">
+                      <p className="font-medium text-blue-300">Er. Himanshi</p>
+                      <p className="text-sm text-gray-400">June 2024 – Present</p>
                     </div>
                   </div>
                 </div>
