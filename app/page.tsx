@@ -713,14 +713,14 @@ export default function LandingPage() {
                   <div className="bg-purple-800 text-white text-sm font-medium px-3 py-1 rounded-full z-10">June 2024</div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                {/* <div className="grid md:grid-cols-2 gap-6">
                   <div className="md:col-start-2">
                     <div className="bg-[#1e1e2f] border border-[#3e3e55] rounded-lg p-4 shadow-sm w-full max-w-xs mr-auto text-gray-100">
                       <p className="font-medium text-purple-300">Barenya Behra</p>
                       <p className="text-sm text-gray-400">June 2024 – January 2025</p>
                     </div>
-                  </div>
-                </div>
+                  </div> */}
+                {/* </div> */}
               </div>
             </div>
 
