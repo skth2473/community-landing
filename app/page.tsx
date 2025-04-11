@@ -484,7 +484,7 @@ export default function LandingPage() {
               <Card className="overflow-hidden">
                 <div className="aspect-video w-full overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/aptos.jpg"
                     width={300}
                     height={200}
                     alt="Past event highlight"
