@@ -1,8 +1,8 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Github, Linkedin, Twitter, ArrowLeft, Instagram } from 'lucide-react'
+import { Github, Linkedin, Twitter, ArrowLeft } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export default function TeamPage() {
   // Team members data organized by departments
@@ -15,8 +15,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Er. Himanshi",
@@ -25,8 +25,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Sarthak Kumar Thakur",
@@ -35,8 +35,8 @@ export default function TeamPage() {
         social: {
           linkedin: "https://www.linkedin.com/in/sarthak-kumar-thakur-097498231/",
           twitter: "https://x.com/Sarthak09847929",
-          github: "https://github.com/skth2473"
-        }
+          github: "https://github.com/skth2473",
+        },
       },
       {
         name: "Anirudh Vikalp",
@@ -45,8 +45,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
     ],
     technical: [
@@ -57,8 +57,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Mehak Kaur",
@@ -67,8 +67,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -77,8 +77,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -87,8 +87,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
     ],
     events: [
@@ -99,8 +99,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -109,8 +109,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -119,8 +119,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -129,8 +129,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
     ],
     design: [
@@ -141,8 +141,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -151,8 +151,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -161,8 +161,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -171,8 +171,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
     ],
     marketing: [
@@ -183,8 +183,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -193,8 +193,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -203,8 +203,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -213,8 +213,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
     ],
     outreach: [
@@ -225,8 +225,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -235,8 +235,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -245,8 +245,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -255,8 +255,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
     ],
     content: [
@@ -267,8 +267,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -277,8 +277,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -287,8 +287,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -297,8 +297,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
     ],
     volunteers: [
@@ -309,8 +309,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -319,8 +319,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -329,8 +329,8 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
       {
         name: "Team Member",
@@ -339,15 +339,46 @@ export default function TeamPage() {
         social: {
           linkedin: "#",
           twitter: "#",
-          github: "#"
-        }
+          github: "#",
+        },
       },
     ],
     // Add more departments as needed to reach 48 members total
-  };
+  }
 
   return (
     <div className="flex min-h-screen flex-col">
+      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
+          <div className="flex gap-2 items-center">
+            <Link href="/">
+              <div className="flex items-center gap-2">
+                <Image
+                  src="/logo.png"
+                  width={40}
+                  height={40}
+                  alt="Engineering Community Logo"
+                  className="h-10 w-auto"
+                />
+                <span className="text-xl font-bold">Engineering Community</span>
+              </div>
+            </Link>
+          </div>
+          <div className="flex flex-1 items-center justify-end space-x-4">
+            <nav className="flex items-center space-x-2 md:space-x-6">
+              <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
+                Home
+              </Link>
+              <Link href="/highlights" className="text-sm font-medium transition-colors hover:text-primary">
+                Highlights
+              </Link>
+              <Button size="sm" className="hidden md:flex" asChild>
+                <Link href="https://cuintranet.in/">Join Us</Link>
+              </Button>
+            </nav>
+          </div>
+        </div>
+      </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background to-muted">
           <div className="container px-4 md:px-6">
