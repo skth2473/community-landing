@@ -3,10 +3,10 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ArrowDown } from "lucide-react";
-import { Instagram } from "lucide-react";
+import { ArrowDown } from "lucide-react"
+import { Instagram } from "lucide-react"
 
-import { Calendar, Users, Code, Lightbulb, ChevronRight, Github, Linkedin, Twitter, ArrowRight } from "lucide-react"
+import { Users, Code, Lightbulb, ChevronRight, Github, Linkedin, Twitter, ArrowRight } from "lucide-react"
 
 export default function LandingPage() {
   return (
@@ -136,7 +136,6 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-
 
         <section id="team" className="w-full py-12 md:py-24 lg:py-32 bg-background">
           <div className="container px-4 md:px-6">
@@ -358,7 +357,6 @@ export default function LandingPage() {
                 </CardContent>
               </Card>
 
-
               <Card className="overflow-hidden">
                 <div className="aspect-square w-full overflow-hidden">
                   <Image
@@ -390,9 +388,11 @@ export default function LandingPage() {
               </Card>
             </div>
             <div className="flex justify-center">
-              <Button variant="outline" className="mt-4">
-                Meet the Full Team
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button variant="outline" className="mt-4" asChild>
+                <Link href="/team">
+                  Meet the Full Team
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </div>
           </div>
@@ -422,9 +422,7 @@ export default function LandingPage() {
                 <CardContent className="p-4">
                   <Badge className="mb-2">Envision 1.0 - 2024</Badge>
                   <h3 className="font-bold">Inaurgation of our Community</h3>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    Launched our community with a grand event.
-                  </p>
+                  <p className="text-sm text-muted-foreground mt-1">Launched our community with a grand event.</p>
                 </CardContent>
               </Card>
               <Card className="overflow-hidden">
@@ -440,9 +438,7 @@ export default function LandingPage() {
                 <CardContent className="p-4">
                   <Badge className="mb-2">Tekathon Bootcamp</Badge>
                   <h3 className="font-bold">Aarambh </h3>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    Nurtured Students for the Smart India Hackathon.
-                  </p>
+                  <p className="text-sm text-muted-foreground mt-1">Nurtured Students for the Smart India Hackathon.</p>
                 </CardContent>
               </Card>
               <Card className="overflow-hidden">
@@ -458,9 +454,7 @@ export default function LandingPage() {
                 <CardContent className="p-4">
                   <Badge className="mb-2">Engineer's Day</Badge>
                   <h3 className="font-bold">National Engineer's Day</h3>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    Celebrated National Engineers Day.
-                  </p>
+                  <p className="text-sm text-muted-foreground mt-1">Celebrated National Engineers Day.</p>
                 </CardContent>
               </Card>
               <Card className="overflow-hidden">
@@ -494,9 +488,7 @@ export default function LandingPage() {
                 <CardContent className="p-4">
                   <Badge className="mb-2">Meet and greet</Badge>
                   <h3 className="font-bold">Community Outreach Program</h3>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    facilitated volunteers with certificates.
-                  </p>
+                  <p className="text-sm text-muted-foreground mt-1">facilitated volunteers with certificates.</p>
                 </CardContent>
               </Card>
               <Card className="overflow-hidden">
@@ -511,17 +503,17 @@ export default function LandingPage() {
                 </div>
                 <CardContent className="p-4">
                   <Badge className="mb-2">AIML Workshop</Badge>
-                  <h3 className="font-bold"></h3>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    Exhibited student projects to industry professionals.
-                  </p>
+                  <h3 className="font-bold">AI/ML Workshop Series</h3>
+                  <p className="text-sm text-muted-foreground mt-1">Hands-on training with popular AI/ML frameworks.</p>
                 </CardContent>
               </Card>
             </div>
             <div className="flex justify-center">
-              <Button variant="outline" className="mt-4">
-                View All Highlights
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Button variant="outline" className="mt-4" asChild>
+                <Link href="/highlights">
+                  View All Highlights
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </div>
           </div>
@@ -609,7 +601,6 @@ export default function LandingPage() {
                 </div>
               </div>
 
-
               {/* Faculty Co-Advisor */}
               {/* Faculty Co-Advisor Section */}
               <div className="bg-[#121218] border border-[#2c2c3a] rounded-lg p-6 shadow-sm mb-8 max-w-md mx-auto text-gray-100">
@@ -639,9 +630,15 @@ export default function LandingPage() {
                     <p className="font-medium text-purple-300">Sarthak Kumar Thakur</p>
                     <p className="text-sm text-gray-400">August 2024 – Present</p>
                     <div className="flex gap-2 mt-1">
-                      <a href="https://github.com/sarthak" target="_blank"><Github className="h-4 w-4 text-gray-500 hover:text-purple-400 transition" /></a>
-                      <a href="https://linkedin.com/in/sarthak" target="_blank"><Linkedin className="h-4 w-4 text-gray-500 hover:text-purple-400 transition" /></a>
-                      <a href="https://instagram.com/sarthak" target="_blank"><Instagram className="h-4 w-4 text-gray-500 hover:text-purple-400 transition" /></a>
+                      <a href="https://github.com/sarthak" target="_blank" rel="noreferrer">
+                        <Github className="h-4 w-4 text-gray-500 hover:text-purple-400 transition" />
+                      </a>
+                      <a href="https://linkedin.com/in/sarthak" target="_blank" rel="noreferrer">
+                        <Linkedin className="h-4 w-4 text-gray-500 hover:text-purple-400 transition" />
+                      </a>
+                      <a href="https://instagram.com/sarthak" target="_blank" rel="noreferrer">
+                        <Instagram className="h-4 w-4 text-gray-500 hover:text-purple-400 transition" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -663,7 +660,9 @@ export default function LandingPage() {
               <div className="space-y-8 relative">
                 {/* Anirudh - Jan 2025 */}
                 <div className="flex items-center justify-center mb-4">
-                  <div className="bg-purple-800 text-white text-sm font-medium px-3 py-1 rounded-full z-10">January 2025</div>
+                  <div className="bg-purple-800 text-white text-sm font-medium px-3 py-1 rounded-full z-10">
+                    January 2025
+                  </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
@@ -672,9 +671,15 @@ export default function LandingPage() {
                       <p className="font-medium text-purple-300">Anirudh Vikalp</p>
                       <p className="text-sm text-gray-400">January 2025 – Present</p>
                       <div className="flex gap-2 mt-1">
-                        <a href="https://github.com/anirudh" target="_blank"><Github className="h-4 w-4 text-gray-500" /></a>
-                        <a href="https://linkedin.com/in/anirudh" target="_blank"><Linkedin className="h-4 w-4 text-gray-500" /></a>
-                        <a href="https://instagram.com/anirudh" target="_blank"><Instagram className="h-4 w-4 text-gray-500" /></a>
+                        <a href="https://github.com/anirudh" target="_blank" rel="noreferrer">
+                          <Github className="h-4 w-4 text-gray-500" />
+                        </a>
+                        <a href="https://linkedin.com/in/anirudh" target="_blank" rel="noreferrer">
+                          <Linkedin className="h-4 w-4 text-gray-500" />
+                        </a>
+                        <a href="https://instagram.com/anirudh" target="_blank" rel="noreferrer">
+                          <Instagram className="h-4 w-4 text-gray-500" />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -682,7 +687,9 @@ export default function LandingPage() {
 
                 {/* Mehak - Feb 2025 */}
                 <div className="flex items-center justify-center mb-4">
-                  <div className="bg-purple-800 text-white text-sm font-medium px-3 py-1 rounded-full z-10">February 2025</div>
+                  <div className="bg-purple-800 text-white text-sm font-medium px-3 py-1 rounded-full z-10">
+                    February 2025
+                  </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
@@ -696,7 +703,9 @@ export default function LandingPage() {
 
                 {/* Lavanya - Dec 2024 */}
                 <div className="flex items-center justify-center mb-4">
-                  <div className="bg-purple-800 text-white text-sm font-medium px-3 py-1 rounded-full z-10">December 2024</div>
+                  <div className="bg-purple-800 text-white text-sm font-medium px-3 py-1 rounded-full z-10">
+                    December 2024
+                  </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
@@ -710,7 +719,9 @@ export default function LandingPage() {
 
                 {/* Barenya - June 2024 to Jan 2025 */}
                 <div className="flex items-center justify-center mb-4">
-                  <div className="bg-purple-800 text-white text-sm font-medium px-3 py-1 rounded-full z-10">June 2024</div>
+                  <div className="bg-purple-800 text-white text-sm font-medium px-3 py-1 rounded-full z-10">
+                    June 2024
+                  </div>
                 </div>
 
                 {/* <div className="grid md:grid-cols-2 gap-6">
@@ -723,10 +734,8 @@ export default function LandingPage() {
                 {/* </div> */}
               </div>
             </div>
-
           </div>
         </section>
-
       </main>
       <footer className="w-full border-t bg-background py-6 md:py-12">
         <div className="container px-4 md:px-6">
@@ -799,7 +808,6 @@ export default function LandingPage() {
                   </Link>
                 </nav>
               </div>
-
             </div>
           </div>
           <div className="mt-8 border-t pt-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -809,17 +817,37 @@ export default function LandingPage() {
               </p>
               <p className="text-xs text-muted-foreground">
                 Developed by{" "}
-                <Link href="https://www.linkedin.com/in/sarthak-kumar-thakur" className="font-medium hover:text-primary" target="_blank" rel="noopener noreferrer">
+                <Link
+                  href="https://www.linkedin.com/in/sarthak-kumar-thakur"
+                  className="font-medium hover:text-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Sarthak Kumar Thakur
                 </Link>
                 <span className="ml-2 inline-flex gap-2">
-                  <Link href="https://github.com/skth2473" className="text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
+                  <Link
+                    href="https://github.com/skth2473"
+                    className="text-muted-foreground hover:text-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Github className="h-4 w-4" />
                   </Link>
-                  <Link href="https://www.linkedin.com/in/sarthak-kumar-thakur-097498231/" className="text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
+                  <Link
+                    href="https://www.linkedin.com/in/sarthak-kumar-thakur-097498231/"
+                    className="text-muted-foreground hover:text-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Linkedin className="h-4 w-4" />
                   </Link>
-                  <Link href="https://x.com/Sarthak09847929" className="text-muted-foreground hover:text-primary" target="_blank" rel="noopener noreferrer">
+                  <Link
+                    href="https://x.com/Sarthak09847929"
+                    className="text-muted-foreground hover:text-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Twitter className="h-4 w-4" />
                   </Link>
                 </span>
